@@ -88,7 +88,7 @@ report:
 	@echo "coverage report: $(COV_DIR)/merged_report.txt"
 
 html:
-	vcover report -html -htmldir $(COV_DIR)/html $(COV_DIR)/merged.ucdb
+	vcover report -html -htmldir $(COV_DIR)/html $(COV_DIR)/merged.ucdbvcover report -html -output out/cov/html out/cov/merged.ucdb
 	@echo "coverage html: $(COV_DIR)/html/index.html"
 
 gui: $(STAMP)

@@ -1,5 +1,5 @@
-# vsim -c -coverage -voptargs="+acc" -sv_seed 1 work.tb_top "+UVM_TESTNAME=apb_smoke_test" "+UVM_VERBOSITY=UVM_MEDIUM" -l out/log/apb_smoke_test_1.log -do "coverage save -onexit -assert -directive -cvg out/cov/apb_smoke_test_1.ucdb; run -all; quit -f" 
-# Start time: 23:12:57 on Oct 04,2026
+# vsim -c -coverage -voptargs="+acc" -sv_seed 5 work.tb_top "+UVM_TESTNAME=apb_smoke_test" "+UVM_VERBOSITY=UVM_MEDIUM" -l out/log/apb_smoke_test_5.log -do "coverage save -onexit -assert -directive -cvg out/cov/apb_smoke_test_5.ucdb; run -all; quit -f" 
+# Start time: 23:13:07 on Oct 04,2026
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 2022.4_5 linux Jun 21 2024
@@ -25,7 +25,7 @@
 # Loading work.apb_if(fast__3)
 # Loading /package/eda2/siemens/questa/cal_2023.4_17.10/questasim/uvm-1.1d/linux/uvm_dpi.so
 # ** Warning: (vsim-8634) Code was not compiled with coverage options.
-# coverage save -onexit -assert -directive -cvg out/cov/apb_smoke_test_1.ucdb
+# coverage save -onexit -assert -directive -cvg out/cov/apb_smoke_test_5.ucdb
 #  run -all
 # ----------------------------------------------------------------
 # UVM-1.1d
@@ -93,13 +93,13 @@
 #         num_last_rsps      integral                   32    'd1  
 # -----------------------------------------------------------------
 # 
-# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 1775000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-# UVM_INFO apb_coverage.sv(356) @ 1775000: uvm_test_top.env.cov [APB_COV] items=16 | txn=57.51% err=54.17% seq=64.58% data=52.68% fsm=100.00% | total=65.79% (goal 100.0%)
-# UVM_INFO apb_master_driver.sv(255) @ 1775000: uvm_test_top.env.mst_agt.drv [APB_MST] Completed 16 transfers (8 rd / 8 wr, 0 error resp, 7 back-to-back), 0 aborted, 0 timeouts
-# UVM_INFO apb_scoreboard.sv(309) @ 1775000: uvm_test_top.env.sb [APB_SB] mon=16 resp=16 exp=16 | err-chk=16 wr-chk=8 rd-chk=8 resp-cmp=16 exp-cmp=16 | resets=0 errors=0
-# UVM_INFO apb_scoreboard.sv(315) @ 1775000: uvm_test_top.env.sb [APB_SB] *** APB SCOREBOARD: PASS ***
-# UVM_INFO apb_slave_driver.sv(253) @ 1775000: uvm_test_top.env.slv_agt.drv [APB_SLV] Completed 16 transfers (0 error responses), 0 aborted, 0 default plans; mem: 8 rd / 8 wr / 0 err
-# UVM_INFO apb_monitor.sv(196) @ 1775000: uvm_test_top.env.slv_agt.mon [APB_MON] Observed 16 transfers, 0 aborted, 0 monitor-detected violations
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 1805000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO apb_coverage.sv(356) @ 1805000: uvm_test_top.env.cov [APB_COV] items=16 | txn=59.73% err=54.17% seq=66.67% data=47.77% fsm=100.00% | total=65.67% (goal 100.0%)
+# UVM_INFO apb_master_driver.sv(255) @ 1805000: uvm_test_top.env.mst_agt.drv [APB_MST] Completed 16 transfers (8 rd / 8 wr, 0 error resp, 6 back-to-back), 0 aborted, 0 timeouts
+# UVM_INFO apb_scoreboard.sv(309) @ 1805000: uvm_test_top.env.sb [APB_SB] mon=16 resp=16 exp=16 | err-chk=16 wr-chk=8 rd-chk=8 resp-cmp=16 exp-cmp=16 | resets=0 errors=0
+# UVM_INFO apb_scoreboard.sv(315) @ 1805000: uvm_test_top.env.sb [APB_SB] *** APB SCOREBOARD: PASS ***
+# UVM_INFO apb_slave_driver.sv(253) @ 1805000: uvm_test_top.env.slv_agt.drv [APB_SLV] Completed 16 transfers (0 error responses), 0 aborted, 0 default plans; mem: 8 rd / 8 wr / 0 err
+# UVM_INFO apb_monitor.sv(196) @ 1805000: uvm_test_top.env.slv_agt.mon [APB_MON] Observed 16 transfers, 0 aborted, 0 monitor-detected violations
 # 
 # --- UVM Report Summary ---
 # 
@@ -119,7 +119,7 @@
 # [TEST_DONE]     1
 # [UVMTOP]     1
 # ** Note: $finish    : /package/eda2/siemens/questa/cal_2023.4_17.10/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
-#    Time: 1775 ns  Iteration: 59  Instance: /tb_top
+#    Time: 1805 ns  Iteration: 59  Instance: /tb_top
 # Saving coverage database on exit...
-# End time: 23:12:59 on Oct 04,2026, Elapsed time: 0:00:02
+# End time: 23:13:09 on Oct 04,2026, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 1
