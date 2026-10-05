@@ -1,0 +1,16 @@
+QuestaSim vlog 2022.4_5 Compiler 2024.06 Jun 21 2024
+Start time: 22:39:33 on Oct 04,2026
+vlog -sv -timescale 1ns/1ps "+incdir+." -work work -l comp.log apb_if.sv apb_pkg.sv apb_tests.sv tb_top.sv 
+** Note: (vlog-2286) apb_if.sv(15): Using implicit +incdir+/package/eda2/siemens/questa/cal_2023.4_17.10/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling interface apb_if
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling package apb_pkg
+-- Compiling package apb_test_pkg
+-- Importing package apb_pkg
+-- Compiling module tb_top
+-- Importing package apb_test_pkg
+
+Top level modules:
+	tb_top
+End time: 22:39:33 on Oct 04,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

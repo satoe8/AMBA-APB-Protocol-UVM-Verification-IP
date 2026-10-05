@@ -80,7 +80,7 @@ class apb_slave_driver #(int unsigned ADDR_WIDTH = 32,
 
   // --------------------------------------------------------------------------
   virtual task run_phase(uvm_phase phase);
-    plan_slots = new(plan_depth);
+    plan_slots = new(int'(plan_depth));
     fork
       fetch_plans();
       respond();

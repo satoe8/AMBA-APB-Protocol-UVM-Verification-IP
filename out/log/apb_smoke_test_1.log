@@ -1,0 +1,127 @@
+# vsim -c -coverage -voptargs="+acc" -sv_seed 1 work.tb_top "+UVM_TESTNAME=apb_smoke_test" "+UVM_VERBOSITY=UVM_MEDIUM" -l out/log/apb_smoke_test_1.log -do "coverage save -onexit -assert -directive -cvg out/cov/apb_smoke_test_1.ucdb; run -all; quit -f" 
+# Start time: 22:39:34 on Oct 04,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim
+# //  Version 2022.4_5 linux Jun 21 2024
+# //
+# //  Copyright 1991-2024 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.apb_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.apb_pkg(fast)
+# Loading work.apb_test_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.tb_top(fast)
+# Loading work.apb_if(fast__3)
+# Loading /package/eda2/siemens/questa/cal_2023.4_17.10/questasim/uvm-1.1d/linux/uvm_dpi.so
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# coverage save -onexit -assert -directive -cvg out/cov/apb_smoke_test_1.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test apb_smoke_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# -----------------------------------------------------------------
+# Name                       Type                       Size  Value
+# -----------------------------------------------------------------
+# uvm_test_top               apb_smoke_test             -     @474 
+#   env                      uvm_env                    -     @488 
+#     cov                    uvm_component              -     @524 
+#       analysis_imp         uvm_analysis_imp           -     @531 
+#     mst_agt                uvm_agent                  -     @507 
+#       ap                   uvm_analysis_port          -     @542 
+#       drv                  uvm_driver #(REQ,RSP)      -     @661 
+#         ap                 uvm_analysis_port          -     @684 
+#         rsp_port           uvm_analysis_port          -     @676 
+#         seq_item_port      uvm_seq_item_pull_port     -     @668 
+#       sqr                  uvm_sequencer              -     @552 
+#         rsp_export         uvm_analysis_export        -     @559 
+#         seq_item_export    uvm_seq_item_pull_imp      -     @653 
+#         arbitration_queue  array                      0     -    
+#         lock_queue         array                      0     -    
+#         num_last_reqs      integral                   32    'd1  
+#         num_last_rsps      integral                   32    'd1  
+#     sb                     uvm_scoreboard             -     @516 
+#       exp_imp              uvm_analysis_imp_apb_exp   -     @714 
+#       mon_imp              uvm_analysis_imp_apb_mon   -     @698 
+#       resp_imp             uvm_analysis_imp_apb_resp  -     @706 
+#     slv_agt                uvm_agent                  -     @499 
+#       ap                   uvm_analysis_port          -     @725 
+#       drv                  uvm_driver #(REQ,RSP)      -     @865 
+#         resp_ap            uvm_analysis_port          -     @888 
+#         rsp_port           uvm_analysis_port          -     @880 
+#         seq_item_port      uvm_seq_item_pull_port     -     @872 
+#       mon                  uvm_monitor                -     @744 
+#         ap                 uvm_analysis_port          -     @898 
+#       resp_ap              uvm_analysis_port          -     @733 
+#       sqr                  uvm_sequencer              -     @756 
+#         rsp_export         uvm_analysis_export        -     @763 
+#         seq_item_export    uvm_seq_item_pull_imp      -     @857 
+#         arbitration_queue  array                      0     -    
+#         lock_queue         array                      0     -    
+#         num_last_reqs      integral                   32    'd1  
+#         num_last_rsps      integral                   32    'd1  
+# -----------------------------------------------------------------
+# 
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 1775000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO apb_coverage.sv(356) @ 1775000: uvm_test_top.env.cov [APB_COV] items=16 | txn=57.51% err=54.17% seq=64.58% data=52.68% fsm=100.00% | total=65.79% (goal 100.0%)
+# UVM_INFO apb_master_driver.sv(255) @ 1775000: uvm_test_top.env.mst_agt.drv [APB_MST] Completed 16 transfers (8 rd / 8 wr, 0 error resp, 7 back-to-back), 0 aborted, 0 timeouts
+# UVM_INFO apb_scoreboard.sv(309) @ 1775000: uvm_test_top.env.sb [APB_SB] mon=16 resp=16 exp=16 | err-chk=16 wr-chk=8 rd-chk=8 resp-cmp=16 exp-cmp=16 | resets=0 errors=0
+# UVM_INFO apb_scoreboard.sv(315) @ 1775000: uvm_test_top.env.sb [APB_SB] *** APB SCOREBOARD: PASS ***
+# UVM_INFO apb_slave_driver.sv(253) @ 1775000: uvm_test_top.env.slv_agt.drv [APB_SLV] Completed 16 transfers (0 error responses), 0 aborted, 0 default plans; mem: 8 rd / 8 wr / 0 err
+# UVM_INFO apb_monitor.sv(196) @ 1775000: uvm_test_top.env.slv_agt.mon [APB_MON] Observed 16 transfers, 0 aborted, 0 monitor-detected violations
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   11
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [APB_COV]     1
+# [APB_MON]     1
+# [APB_MST]     1
+# [APB_SB]     2
+# [APB_SLV]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Note: $finish    : /package/eda2/siemens/questa/cal_2023.4_17.10/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1775 ns  Iteration: 59  Instance: /tb_top
+# Saving coverage database on exit...
+# End time: 22:39:38 on Oct 04,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 2
